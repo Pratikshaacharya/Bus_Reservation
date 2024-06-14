@@ -1,0 +1,84 @@
+<div id="main_1">
+<div class="card">
+  <h2>Payment </h2>
+          <div class="col-50">
+            
+            <label for="fname">Accepted Cards</label>
+            
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+        
+          </div>
+
+  <button class="accordion">Credit Card</button>
+  <div class="panel">
+    <!-- <div class="col-50"> -->
+
+    <br>
+    <label for="cname">Name on Card</label><br>
+    <input type="text" id="cname" name="cardname" ><br>
+    <label for="ccnum">Card number</label><br>
+    <input type="text" id="ccnum" name="cardnumber" pattern="\d*"><br>
+    <label for="expmonth">Expiry</label><br>
+    <input type="month" id="expmonth" name="expmonth"><br>
+    
+    <label for="cvv">CVV</label><br>
+    <input type="text" id="cvv" name="cvv">
+    
+  </div>
+
+
+  <button class="accordion">Net Banking</button>
+  <div class="panel">
+    <br>
+    <!-- <div class="col-50"> -->
+
+    <label for="Bank">Select Your Bank</label>
+    <select id="Bank" name="Bank">
+      <option value="ICICT">ICICI Bank</option>
+      <option value="HDFC">HDFC Bank</option>
+      <option value="AXIS">AXIS Bank</option>
+      <option value="State Bank Of India">State Bank Of India</option>
+      <option value="Bank of Baroda">Bank of Baroda</option>
+
+    </select>
+    <!-- </div> -->
+  </div>
+  <button class="accordion">Wallet</button>
+  <div class="panel">
+    <br>
+   
+
+    <input type="radio" name="radio"/> Wallet
+  </div>
+  
+<button type="button"id="myBtn">Pay</button>
+  
+  <!-- <a style="text-decoration: none; color: white;" [routerLink]="['/ticketLink']"><button type="submit" value="Submit" class="btn" onclick="myFunction()">Pay</button></a> -->
+ 
+</div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Payment succesful <br><br>
+    Your ticket has been booked<br><br>
+    <b>Thankyou!!!</b></p>
+
+    <br>
+    <br>
+    <a style="text-decoration: none; color: white;" [routerLink]="['/ticketLink']"><button type="submit" value="Submit" class="cancelbtn" >view ticket</button></a>
+  </div>
+
+</div>
+
+
